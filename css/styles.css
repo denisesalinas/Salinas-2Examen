@@ -1,0 +1,102 @@
+ .bg-nav{
+    border-radius: 50px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,237,113,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.h1-next{
+    font-size: 5vw;
+}
+.p-next{
+    font-size: 1vw;
+    color: rgb(156, 155, 162);
+}
+
+.color {
+    position: absolute;
+    top: -180px;
+    right: -200px;
+    width: 70%; 
+    z-index: 2; 
+}
+.celular {
+    position: relative;
+    top: -85px; 
+    right: -17%;
+    width: 100%; 
+    z-index: 4; 
+   
+}
+.nextGene {
+    position: relative;
+    overflow-x: hidden;
+    z-index: 3;
+}
+nav {
+    z-index: 5; 
+}
+.bg-easy{
+    background-color:#ECEDEF ;
+    position: relative;
+    margin-top: -245px;
+    z-index: 1; 
+}
+.tarjeta{
+    background-color: #ECEDEF;
+}
+main article .titulo, main h1{
+    color: #434551;
+}
+main article .pText, main p{
+    color: #A8A8B0;
+}
+main h1{
+    font-size: 4vw;
+}
+main p{
+    font-size: 1vw;
+}
+main article .titulo{
+    font-size: 2vw;
+}
+
+.textSpan{
+    font-size: 0.75vw;
+    color: #A8A8B0;
+}
+
+.texto-hover {
+    color: black; 
+    transition: color 0.3s;
+}
+
+.texto-hover:hover {
+    color: #77B6A1;
+    cursor: pointer;
+} 
+
+footer{
+    background-color: #2D314E;
+    color:white;
+}
+.imagen-hover{
+    transition: color 0.3s;
+}
+.imagen-hover:hover{/*Revisar filtro*/
+    filter:sepia(100%);
+    cursor:pointer;
+}
+.texto-footer {
+    color:white; 
+    transition: color 0.3s;
+}
+
+.texto-footer:hover {
+    color: #77B6A1;
+    cursor: pointer;
+} 
+.piePage{
+    color: #A8A8B0;
+}
