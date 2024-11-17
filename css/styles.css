@@ -1,3 +1,5 @@
+ /*-----Header Nav----*/
+ 
  .bg-nav{
     border-radius: 50px;
     color: white;
@@ -5,25 +7,40 @@
     padding-right: 20px;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,237,113,1) 0%, rgba(0,212,255,1) 100%);
 }
-
-.h1-next{
-    font-size: 5vw;
+nav {
+    z-index: 5; 
 }
-.p-next{
-    font-size: 1vw;
+
+/*-----Main NextGeneration-----*/
+.nextGene .textoBoton{
+    margin-top: 2vw;
+    margin-left: 3vw;
+}
+.nextGene .h1-next{
+    font-size: 4vw;
+    z-index: 3;
+}
+.nextGene .p-next{
+    font-size: 2vw;
     color: rgb(156, 155, 162);
+    z-index: 3;
+}
+
+.nextGene .btn{
+    font-size: 2vw;
+    z-index: 3;
 }
 
 .color {
     position: absolute;
-    top: -180px;
-    right: -200px;
+    top: -25%;
+    right: -20%;
     width: 70%; 
     z-index: 2; 
 }
 .celular {
     position: relative;
-    top: -85px; 
+    top: -15%; 
     right: -17%;
     width: 100%; 
     z-index: 4; 
@@ -34,34 +51,34 @@
     overflow-x: hidden;
     z-index: 3;
 }
-nav {
-    z-index: 5; 
-}
+/*------- Main EasyBank-------*/
 .bg-easy{
     background-color:#ECEDEF ;
     position: relative;
-    margin-top: -245px;
+    margin-top: -20%;
     z-index: 1; 
 }
 .tarjeta{
     background-color: #ECEDEF;
 }
-main article .titulo, main h1{
+.EasyBank article .titulo, main h1{
     color: #434551;
+    padding-top: 10%;
 }
-main article .pText, main p{
+.EasyBank article .pText, main p{
     color: #A8A8B0;
 }
-main h1{
-    font-size: 4vw;
+.EasyBank h1 .titulo{
+    font-size: 8vw;
+    margin-top: 30%;
 }
-main p{
-    font-size: 1vw;
+.EasyBank p .pText{
+    font-size: 3vw;
 }
-main article .titulo{
+.EasyBank article .titulo{
     font-size: 2vw;
 }
-
+/*------Latest-------*/
 .textSpan{
     font-size: 0.75vw;
     color: #A8A8B0;
@@ -76,7 +93,7 @@ main article .titulo{
     color: #77B6A1;
     cursor: pointer;
 } 
-
+/*------Footer------*/
 footer{
     background-color: #2D314E;
     color:white;
@@ -84,10 +101,13 @@ footer{
 .imagen-hover{
     transition: color 0.3s;
 }
-.imagen-hover:hover{/*Revisar filtro*/
-    filter:sepia(100%);
+.imagen-hover:hover{
+    fill: #0fe09b;
+    filter: invert(52%) sepia(14%) saturate(1000%) hue-rotate(120deg)
+      brightness(95%) contrast(85%);
     cursor:pointer;
 }
+
 .texto-footer {
     color:white; 
     transition: color 0.3s;
@@ -99,4 +119,126 @@ footer{
 } 
 .piePage{
     color: #A8A8B0;
+}
+.bg-footer{
+    border-radius: 50px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,237,113,1) 0%, rgba(0,212,255,1) 100%);
+    transition: color 0.3s;
+}
+.bg-footer:hover{
+    color:black;
+    cursor: pointer;
+}
+
+/*------------      Mobile 375px       --------*/
+@media(max-width:600px){
+    /*----footer-----*/
+       .texto-footer{
+      font-size: 4vw;  
+    }
+    /*----Latest-----*/
+    .Latest h1{
+        font-size: 10vw;
+        text-align: center;
+    }
+   
+    .Latest article .titulo{
+        font-size: 5vw;
+    }
+    .Latest article .pText{
+        font-size: 4vw;
+    }
+    .Latest article .textSpan{
+        font-size:3vw ;
+    }
+
+
+    /*----EasyBank----*/
+    .EasyBank h1 {
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    .EasyBank .pText{
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .EasyBank  article .titulo{
+        font-size:6vw;
+        text-align: center;        
+    }
+    .EasyBank article .pText{
+        font-size: 4vw;
+        text-align: center;
+        padding:0px;
+    }
+    .EasyBank article i{
+        text-align: center;
+    }
+
+    /*-----NextGene*/
+    .nextGene .h1-next{
+        font-size: 12vw;
+        margin-top: 150%;
+    }
+    .nextGene .p-next{
+        font-size: 5vw;
+    }
+
+    .nextGene .btn{
+        font-size: 5vw;
+        margin-top: 10%;
+        padding: 10px 40px;
+    }
+    
+    .nextGene {
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        margin-bottom: 30%;
+    }
+    
+    .color {
+        position: absolute;
+        top: -25%;
+        right: -65%;
+        width: 190%; 
+        z-index: 1;
+    }
+    .celular {
+        position: absolute;
+        top: -12%;
+        left:0%; 
+        width: 100%; 
+        z-index: 2 ;
+    }
+   
+    nav {
+        z-index: 3 ; 
+    }
+
+    .bg-easy{
+        background-color:#ECEDEF ;
+        margin-top: 0%;        
+    }
+}
+@media(max-width:640px){
+    .bg-easy{
+        margin-top: -15%;
+    } 
+   
+}    
+
+@media( min-width:640px) and (max-width:970px){
+    .bg-easy{
+        margin-top: -18%;
+    }
+    .Latest article .textSpan{
+        font-size:1vw ;
+    }
+
 }
